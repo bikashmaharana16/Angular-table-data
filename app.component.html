@@ -1,0 +1,58 @@
+<figure class="text-center">
+    <blockquote class="blockquote">
+      <p>Table Data Presentation</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        By Bikash Kumar Maharana <cite title="Source Title">Tool-Angular</cite>
+    </figcaption>
+  </figure>
+<table border="3" class="table-primary" align="center">
+    <tr class="table-info">
+        <th >First Name</th>
+        <th>Last Name</th>
+        <th>Smart City</th>
+        <th>Address</th>
+        <th>State</th>
+    </tr>
+    <tr *ngFor="let s of students" class="table-secondary">
+        <td>{{s.First_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.address.city}}</td>
+        <td>{{s.address.address1}}</td>
+        <td>{{s.address.state}}</td>
+    </tr>
+    <tr *ngFor="let s of students"class="table-success">
+        <td>{{s.First_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.address.city}}</td>
+        <td>{{s.address.address1}}</td>
+        <td>{{s.address.state}}</td>
+    </tr>
+    <tr *ngFor="let s of students"class="table-danger">
+        <td>{{s.First_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.address.city}}</td>
+        <td>{{s.address.address1}}</td>
+        <td>{{s.address.state}}</td>
+    </tr>
+    <tr *ngFor="let s of students"class="table-warning">
+        <td>{{s.First_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.address.city}}</td>
+        <td>{{s.address.address1}}</td>
+        <td>{{s.address.state}}</td>
+    <tr *ngFor="let s of students"class="table-light">
+        <td>{{s.First_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.address.city}}</td>
+        <td>{{s.address.address1}}</td>
+        <td>{{s.address.state}}</td>
+    </tr>
+    <tr *ngFor="let s of students"class="table-dark">
+        <td>{{s.First_name}}</td>
+        <td>{{s.last_name}}</td>
+        <td>{{s.address.city}}</td>
+        <td>{{s.address.address1}}</td>
+        <td>{{s.address.state}}</td>
+    </tr>
+</table>
